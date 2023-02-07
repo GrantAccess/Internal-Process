@@ -15,7 +15,7 @@ body {
 }
 
 /* like all the a link tags */
-a {
+#nav a {
 	text-decoration: none; /* no link colours or lines */
 	color: red; /* the text colour */
 }
