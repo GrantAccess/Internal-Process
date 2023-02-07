@@ -1,9 +1,81 @@
 /* site_style.css */
 
-/* define element */
+/* Development of this style is at;
+https://www.youtube.com/watch?v=0afZj1G0BIE */
+
+/* define element '# for id' '. for class' */
 /* color #66CCFF blueshade */
+/* color #EEEEEE grayshade */
+/* color #999999 grayish */
+
+/* like the page body */
+body {
+	background-color: #EEEEEE;
+	font-family: Helvetica, Arial, sans-serif; /* the text font to display */
+}
+
+/* like all the a link tags */
+a {
+	text-decoration: none; /* no link colours or lines */
+	color: red; /* the text colour */
+}
+
+/* like all the heading tags */
+h1, h2, h3 {
+	margin: 0; /* no white space around */
+}
+
+#container {
+	background-color: white;
+	
+	/* Center everything */
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /* like <div id="header"> */
 #header {
-	background-color: #66CCFF;
+	background-color: #66CCFF;  /* the page colour */
+	color: white; /* the text colour */
+	text-align: center; /* Words run down the middle */
+	padding: 10px 10px 10px 10px; /* margins Top Right Bottom Left */
+	}
+
+/* like <div id="content"> */	
+#content {
+	padding: 10px 10px 10px 10px; /* margins Top Right Bottom Left */
+}
+
+/* div normaly are above each other. use float for side-by-side */
+/* like <div id="nav"> */
+#nav {
+	width: 180px; /* the element width */
+	float: left; /* element on left side */
+	}	
+
+/* like all the ul tags in nav div */
+#nav ul {
+	list-style-type: none; /* no bullet points */
+	padding: 0; /* tight to margin */
+}
+
+/* like <div id="main"> */
+#main {
+	width: 600px; /* the element width */
+	float: right; /* element on Right side */
+}
+
+/* like <div id="footer"> */
+#footer {
+	clear: both; /* display when clear of float elements*/
+	padding: 10px 10px 10px 10px; /* margins Top Right Bottom Left */
+	background-color: #999999;  /* the page colour */
+	color: white; /* the text colour */
+	text-align: right; /* Words run down the RHS */
+}
+
+/* like <p class="selected"> */
+#nav .selected {
+	font-weight: bold;
 }
