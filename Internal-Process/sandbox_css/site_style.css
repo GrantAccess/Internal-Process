@@ -1,0 +1,9 @@
+/* site_style.css */
+
+/* define element */
+/* color #66CCFF blueshade */
+
+/* like <div id="header"> */
+#header {
+	background-color: #66CCFF;
+}
