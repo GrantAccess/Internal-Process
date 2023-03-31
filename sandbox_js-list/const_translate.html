@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+
+
+<script>
+// link to documents
+const d_2 = "dict.html"
+const d_3 = "dictA-F.html"
+
+// Create an object:
+const ob_headveil = {id:"headveil", eng:"head veil", lnkeng:"d_2#veil", tng:"Latin", ans:"Capite velato"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = ob_headveil.eng + " - in " + ob_headveil.tng + " is - " + ob_headveil.ans ;
+
+// make link from eng
+function linkeng() 
+{
+lnksng = ob_headveil.lnkeng;
+lnkcut = str.indexOf("#"); // find where the # is
+lnkdoc = lnksng;
+}
+
+linkeng()
+
+</script>
+
+<p>Bæc bord - is Suevii for - "Larboard"
+</p><p>Béahgifa - is Suevii for - "Ring-Giver"
+</p><p>Béam - is Suevii for - "Wooden Ship"
+</p><p>Béo Hyrde - is Suevii for - "Beekeeper"
+</p><p>Bíesting - is Suevii for - "Bee Sting"
+</p><p>Calceas - is Latin for - "hobnailed closed boots"
+</p><p>Capite velato - is Latin for - "head veil"
+</p>
+<p>
+</p><p>
+</p><p>
+</p>
+<div id="demo"></div>
+
+</body>
+</html>

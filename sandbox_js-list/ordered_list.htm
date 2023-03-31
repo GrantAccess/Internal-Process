@@ -1,0 +1,79 @@
+<html>
+<head>
+
+<script>
+/**
+ * Generate HTML List From JavaScript Array
+ *
+ * @source https://getbutterfly.com/generate-html-list-from-javascript-array/
+ */
+function makeList() {
+    // Establish the array which acts as a data source for the list
+    let listData = [
+        'Blue',
+        'Red',
+        'White',
+        'Green',
+        'Black',
+        'Orange'
+    ];
+
+    // Make a container element for the list
+    let listContainer = document.createElement('div');
+
+    // Make the list
+    let listElement = document.createElement('ol');
+
+    // Make the list item
+    let listItem = document.createElement('li');
+
+    // Add it to the page
+    document.body.appendChild(listContainer);
+    listContainer.appendChild(listElement);
+
+    // Set up a loop that goes through the items in listItems one at a time
+    let numberOfListItems = listData.length;
+
+    for (let i = 0; i < numberOfListItems; ++i) {
+        // Add the item text
+
+	// Use this if the array elements contain HTML
+        // listItem.innerHTML = listData[i];
+        // If not, use the line below
+
+	// Use this if the array elements are text only
+        listItem.textContent = listData[i];
+
+        // Add listItem to the listElement
+        listElement.appendChild(listItem);
+
+        // Reset the list item
+        listItem = document.createElement('li');
+    }
+}
+
+// Usage
+makeList();
+</script>
+
+</head>
+
+<body>
+<div>
+
+<p> This should make a list from data</p>
+
+<p>
+See how it works at 
+<a href="https://getbutterfly.com/generate-html-list-from-javascript-array"
+target="_new">getbutterfly.com
+</a>
+</p>
+
+<script>
+makeList();
+</script>
+</div>
+</body>
+
+</html>

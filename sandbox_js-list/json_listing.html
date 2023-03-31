@@ -1,0 +1,65 @@
+<html>
+<head>
+
+<script>
+
+{
+	"id": "0001",
+	"type": "donut",
+	"name": "Cake",
+	"ppu": 0.55,
+	"batters":
+		{
+			"batter":
+				[
+					{ "id": "1001", "type": "Regular" },
+					{ "id": "1002", "type": "Chocolate" },
+					{ "id": "1003", "type": "Blueberry" },
+					{ "id": "1004", "type": "Devil's Food" }
+				]
+		},
+	"topping":
+		[
+			{ "id": "5001", "type": "None" },
+			{ "id": "5002", "type": "Glazed" },
+			{ "id": "5005", "type": "Sugar" },
+			{ "id": "5007", "type": "Powdered Sugar" },
+			{ "id": "5006", "type": "Chocolate with Sprinkles" },
+			{ "id": "5003", "type": "Chocolate" },
+			{ "id": "5004", "type": "Maple" }
+		]
+}
+
+
+
+</script>
+
+</head>
+<body>
+
+<script>
+const dsExample4 = new Data.JSONDataSet("./object-02.json", { path: "batters.batter" });
+</script>
+
+
+<p>
+<br>Example 4
+
+<br>The objects returned from most Server APIs are highly nested:
+
+<br>If the data you want to extract out is not at the top-level of the JSON object, you can tell the JSON data set where to find it by using the "path" constructor option. In this example, we want to extract out all of the "batter" data:
+
+<br>var dsExample4 = new Spry.Data.JSONDataSet("../../data/json/object-02.js", { path: "batters.batter" });
+
+<br>...
+<br>https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html
+</p>
+<div class="liveSample" spry:region="dsExample4">
+<p>Batters:</p>
+<ul>
+	<li spry:repeat="dsExample4">({type} {id})</li>
+</ul>
+</div>
+
+</body>
+</html>
